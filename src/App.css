@@ -1,38 +1,90 @@
-.App {
-  text-align: center;
+.klinecharts-pro {
+  border-radius: 14px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.multiContainer {
+  width: 90vw;
+  border: 0.1px solid rgb(215, 215, 215);
+  padding: 8px;
+  border-radius: 14px;
+  display: flex; 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.eventsContrainer {
+  text-align: left;
 }
 
-.App-header {
-  background-color: #282c34;
+.chartContrainer {
+  width: 100%;
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: rgba(255, 255, 255, 0.87);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
   min-height: 100vh;
+}
+
+.announcement-bar {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 0;
+  height: 30px;
+  font-size: 12px;
+  background-color: rgba(22, 119, 255, 0.08);
+  color: #051441;
+  font-weight: bold;
+  border: solid 1px #ebedf1;
 }
 
-.App-link {
-  color: #61dafb;
+.announcement-bar svg {
+  fill: #1677ff;
+  margin-right: 4px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.announcement-bar a {
+  color: #1677ff
+}
+
+.mainChartContainer {
+  display: flex;
+  flex-direction: column-reverse;
+  height: calc(100vh - 30px - 6px);
+}
+
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+  padding: 10px 22px;
+}
+
+.button-container button:hover {
+  color: #1677ff;
+}
+
+.button-container button {
+  padding: 2px 6px;
+  background-color: transparent;
+  border-radius: 4px;
+  font-size: 12px;
+  color: #051441;
+  outline: none;
+  border: none;
 }

@@ -1,0 +1,278 @@
+{
+    "timeframes": [
+        {
+            "text": "second",
+            "ms": 1000
+        },
+        {
+            "text": "fivesecond",
+            "ms": 5000
+        },
+        {
+            "text": "fifteensecond",
+            "ms": 15000
+        },
+        {
+            "text": "minute",
+            "ms": 60000
+        }
+    ],
+    "events": {
+        "1": {
+            "description": "Passaggio",
+            "outcome": {
+                "0": {
+                    "vote": -0.2
+                },
+                "1": {
+                    "vote": 0.05,
+                    "qualifier": {
+                        "1": {
+                            "vote": 0.07,
+                            "description": "Long ball"
+                        },
+                        "2": {
+                            "vote": 0.3,
+                            "description": "Cross"
+                        },
+                        "3": {
+                            "vote": 0.06,
+                            "description": "Head pass"
+                        },
+                        "4": {
+                            "vote": 0.4,
+                            "description": "Through ball"
+                        },
+                        "7": {
+                            "vote": -0.3,
+                            "description": "Players caught offside"
+                        }
+                    }
+                }
+            }
+        },
+        "2": {
+            "description": "Offside pass",
+            "outcome": {
+                "1": {
+                    "vote": 0
+                }
+            }
+        },
+        "3": {
+            "description": "Take On",
+            "outcome": {
+                "0": {
+                    "vote": -0.3,
+                    "qualifier": {
+                        "211": {
+                            "vote": -0.1,
+                            "description": "Overrun"
+                        }
+                    }
+                },
+                "1": {
+                    "vote": 0.25,
+                    "qualifier": {
+                        "23": {
+                            "vote": 0.32,
+                            "description": "Fast break. The event occurred in open play and part of/following a fast break situation"
+                        },
+                        "138": {
+                            "vote": 0.4,
+                            "description": "Hit Woodwork"
+                        }
+                    }
+                }
+            }
+        },
+        "4": {
+            "description": "Foul",
+            "outcome": {
+                "0": {
+                    "vote": 0.25,
+                    "qualifier": {
+                        "34": {
+                            "vote": -0.3,
+                            "description": "Referee abuse"
+                        },
+                        "12": {
+                            "vote": 0.1,
+                            "description": "Dangerous play"
+                        }
+                    }
+                },
+                "1": {
+                    "qualifier": {
+                        "9": {
+                            "description": "Penalty",
+                            "vote": 1.5
+                        },
+                        "10": {
+                            "vote": 0.5,
+                            "description": "Handball"
+                        }
+                    }
+                }
+            }
+        },
+        "5": {
+            "description": "Out",
+            "outcome": {
+                "0": {
+                    "vote": -0.0005
+                },
+                "1": {
+                    "vote": 0
+                }
+            }
+        },
+        "6": {
+            "description": "Corner awarded",
+            "outcome": {
+                "0": {
+                    "vote": 0.08
+                },
+                "1": {
+                    "vote": 0
+                }
+            }
+        },
+        "7": {
+            "description": "Takle",
+            "outcome": {
+                "0": {
+                    "vote": -0.15
+                },
+                "1": {
+                    "vote": 0.15,
+                    "qualifier": {
+                        "14": {
+                            "vote": 0.35,
+                            "description": "Last line"
+                        }
+                    }
+                }
+            }
+        },
+        "8": {
+            "description": "Interception",
+            "outcome": {
+                "1": {
+                    "vote": 0.2,
+                    "qualifier": {
+                        "14": {
+                            "vote": 0.35,
+                            "description": "Last line"
+                        },
+                        "15": {
+                            "vote": 0.22,
+                            "description": "Head"
+                        },
+                        "138": {
+                            "vote": 0.15,
+                            "description": "Hit woodwork"
+                        }
+                    }
+                }
+            }
+        },
+        "12": {
+            "description": "Clearance",
+            "outcome": {
+                "1": {
+                    "vote": 0.03,
+                    "qualifier": {}
+                }
+            }
+        },
+        "16": {
+            "description": "Goal",
+            "outcome": {
+                "1": {
+                    "vote": 8
+                }
+            }
+        },
+        "17": {
+            "description": "Cartellino",
+            "outcome": {
+                "1": {
+                    "vote": -1.5,
+                    "qualifier": {
+                        "31": {
+                            "vote": -1.5,
+                            "description": "Giallo"
+                        },
+                        "32": {
+                            "vote": -2,
+                            "description": "Doppio giallo"
+                        },
+                        "33": {
+                            "vote": -4,
+                            "description": "Rosso"
+                        }
+                    }
+                }
+            }
+        },
+        "41": {
+            "description": "Punch",
+            "outcome": {
+                "0": {
+                    "vote": -0.2
+                },
+                "1": {
+                    "vote": 0.1,
+                    "qualifier": {
+                        "233": {
+                            "vote": 0,
+                            "description": "Evento opposto collegato (ID stringa)"
+                        },
+                        "56": {
+                            "vote": 1,
+                            "description": "Zone"
+                        }
+                    }
+                }
+            }
+        },
+        "44": {
+            "description": "Aerial",
+            "outcome": {
+                "0": {
+                    "vote": -0.14
+                },
+                "1": {
+                    "vote": 0.14,
+                    "qualifier": {
+                        "56": {
+                            "vote": 1,
+                            "description": "Zone"
+                        }
+                    }
+                }
+            }
+        },
+        "53": {
+            "description": "Cross not Claimed",
+            "outcome": {
+                "0": {
+                    "vote": -0.05
+                },
+                "1": {
+                    "vote": 0.07,
+                    "qualifier": {}
+                }
+            }
+        },
+        "72": {
+            "description": "Caught offside",
+            "outcome": {
+                "1": {
+                    "vote": -0.3
+                }
+            }
+        }
+    }
+}
